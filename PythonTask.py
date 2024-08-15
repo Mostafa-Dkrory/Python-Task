@@ -18,7 +18,7 @@ median_salary = df['Salary(EGP)'].median()
 print(f"Median Salary (EGP): {median_salary}")
 # Ratio between males and female employees
 gender_counts = df['Gender'].value_counts()
-male_female_ratio = gender_counts['Male'] / gender_counts['Female'] if 'Female' in gender_counts else "No female employees"
+male_female_ratio = gender_counts['M'] / gender_counts['F'] if 'F' in gender_counts else "No female employees"
 print(f"Male to Female Ratio: {male_female_ratio}")
 # 5. Write the processed data to a new CSV file
 output_file_path = "processed_data.csv"
